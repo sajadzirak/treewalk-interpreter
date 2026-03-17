@@ -4,17 +4,18 @@ import (
 	"Guerilla/ast"
 	"Guerilla/lexer"
 	"Guerilla/token"
+	"fmt"
 )
 
 type Parser struct {
-	l *lexer.Lexer
-
+	l         *lexer.Lexer
+	errors    []string
 	curToken  token.Token
 	peekToken token.Token
 }
 
 func New(l *lexer.Lexer) *Parser {
-	p := &Parser{l: l}
+	p := &Parser{l: l, errors: []string{}}
 
 	p.nextToken()
 	p.nextToken()
@@ -40,6 +41,7 @@ func (p *Parser) expectPeek(tokenType token.TokenType) bool {
 		p.nextToken()
 		return true
 	} else {
+		p.peekError(tokenType)
 		return false
 	}
 }
@@ -86,4 +88,14 @@ func (p *Parser) ParseProgram() *ast.Program {
 	}
 
 	return program
+}
+
+func (p *Parser) Errors() []string {
+	return p.errors
+}
+
+func (p *Parser) peekError(t token.TokenType) {
+	msg := fmt.Sprintf("expected next token to be %s, got: %s",
+		t, p.peekToken.Type)
+	p.errors = append(p.errors, msg)
 }
