@@ -1,13 +1,13 @@
 package repl
 
 import (
-	"Guerilla/evaluator"
-	"Guerilla/lexer"
-	"Guerilla/object"
-	"Guerilla/parser"
 	"bufio"
 	"fmt"
 	"io"
+	"treewalk-interpreter/evaluator"
+	"treewalk-interpreter/lexer"
+	"treewalk-interpreter/object"
+	"treewalk-interpreter/parser"
 )
 
 const PROMPT = ">> "

@@ -1,7 +1,7 @@
 package lexer
 
 import (
-	"Guerilla/token"
+	"treewalk-interpreter/token"
 )
 
 type Lexer struct {

@@ -1,10 +1,10 @@
 package parser
 
 import (
-	"Guerilla/ast"
-	"Guerilla/lexer"
 	"fmt"
 	"testing"
+	"treewalk-interpreter/ast"
+	"treewalk-interpreter/lexer"
 )
 
 func TestLetStatements(t *testing.T) {

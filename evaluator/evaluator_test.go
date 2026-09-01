@@ -1,10 +1,10 @@
 package evaluator
 
 import (
-	"Guerilla/lexer"
-	"Guerilla/object"
-	"Guerilla/parser"
 	"testing"
+	"treewalk-interpreter/lexer"
+	"treewalk-interpreter/object"
+	"treewalk-interpreter/parser"
 )
 
 func TestEvalIntegerExpression(t *testing.T) {

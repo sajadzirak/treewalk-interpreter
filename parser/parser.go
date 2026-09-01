@@ -1,11 +1,11 @@
 package parser
 
 import (
-	"Guerilla/ast"
-	"Guerilla/lexer"
-	"Guerilla/token"
 	"fmt"
 	"strconv"
+	"treewalk-interpreter/ast"
+	"treewalk-interpreter/lexer"
+	"treewalk-interpreter/token"
 )
 
 const (

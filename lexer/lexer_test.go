@@ -3,7 +3,7 @@ package lexer
 import (
 	"testing"
 
-	"Guerilla/token"
+	"treewalk-interpreter/token"
 )
 
 func TestNextToken(t *testing.T) {
@@ -20,7 +20,7 @@ func TestNextToken(t *testing.T) {
 	} else {
 		return false;
 	}
-		
+
 	10 == 10;
 	10 != 9;
 	`

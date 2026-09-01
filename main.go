@@ -1,12 +1,12 @@
 package main
 
 import (
-	"Guerilla/repl"
 	"fmt"
 	"os"
+	"treewalk-interpreter/repl"
 )
 
 func main() {
-	fmt.Println("This is Guerilla.")
+	fmt.Println("This is the TreeWalk Interpreter.")
 	repl.Start(os.Stdin, os.Stdout)
 }

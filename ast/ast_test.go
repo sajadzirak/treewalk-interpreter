@@ -1,8 +1,8 @@
 package ast
 
 import (
-	"Guerilla/token"
 	"testing"
+	"treewalk-interpreter/token"
 )
 
 func TestString(t *testing.T) {

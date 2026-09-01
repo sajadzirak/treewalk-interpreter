@@ -1,9 +1,9 @@
 package evaluator
 
 import (
-	"Guerilla/ast"
-	"Guerilla/object"
 	"fmt"
+	"treewalk-interpreter/ast"
+	"treewalk-interpreter/object"
 )
 
 var (

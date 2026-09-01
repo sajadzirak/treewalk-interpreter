@@ -1,10 +1,10 @@
 package object
 
 import (
-	"Guerilla/ast"
 	"bytes"
 	"fmt"
 	"strings"
+	"treewalk-interpreter/ast"
 )
 
 type ObjectType string

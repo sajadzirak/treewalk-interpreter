@@ -1,9 +1,9 @@
 package ast
 
 import (
-	"Guerilla/token"
 	"bytes"
 	"strings"
+	"treewalk-interpreter/token"
 )
 
 type Node interface {

@@ -1,3 +1,3 @@
-module Guerilla
+module treewalk-interpreter
 
 go 1.23.1
